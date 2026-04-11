@@ -55,11 +55,13 @@ This script modifies the Windows registry to configure CMD.
 Be aware that:
 - The theme applies to all new CMD windows.
 - You can revert to default by selecting STANDARD.
-- 
+  
 👨‍💻 Author
+
 Created by Diogo Santos Pombo
 
 📜 License
+
 
 Distributed under the MIT License.
 Feel free to use, modify, and share.
