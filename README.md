@@ -35,7 +35,8 @@ A simple yet stylish utility to **switch Command Prompt (CMD) themes** on Window
 - Run it by double-clicking
 
 
-🖥️ Requirements- Windows 10 or later
+🖥️ Requirements
+- Windows 10 or later
 - PowerShell (pre-installed on Windows)
 - Script execution allowed (already handled with ExecutionPolicy Bypass)
 
