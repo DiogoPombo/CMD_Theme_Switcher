@@ -1,6 +1,6 @@
 ::----------------------------------------------------------::
 :: CMD Theme Switcher - Batch Script to configure CMD theme ::
-::         Author: Diogo Santos Pombo - \Õ/ - @2025         ::
+::         Author: Diogo Santos Pombo - \Õ/ - @2026         ::
 ::----------------------------------------------------------::
 @echo off
 @title CMD Theme Switcher
