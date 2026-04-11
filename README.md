@@ -28,7 +28,7 @@ A simple yet stylish utility to **switch Command Prompt (CMD) themes** on Window
 
 1. Download or clone this repository:
    ```bash
-   git clone https://github.com/yourusername/CMD_Theme_Switcher.git
+   git clone https://github.com/DiogoPombo/CMD_Theme_Switcher
 
 
 - Place the CMD Theme Switcher.CMD file in a convenient folder.
