@@ -33,10 +33,12 @@ A simple yet stylish utility to **switch Command Prompt (CMD) themes** on Window
 - Run it by double-clicking
 
 
+
 🖥️ Requirements
 - Windows 10 or later
 - PowerShell (pre-installed on Windows)
 - Script execution allowed (already handled with ExecutionPolicy Bypass)
+
 
   
 ⚙️ How It Works
@@ -48,15 +50,18 @@ The .CMD script calls PowerShell to:
 - Apply the chosen color command automatically to new CMD sessions
 
 
+
 ⚠️ Disclaimer
 This script modifies the Windows registry to configure CMD.
 Be aware that:
 - The theme applies to all new CMD windows.
 - You can revert to default by selecting STANDARD.
+
   
 👨‍💻 Author
 
 Created by Diogo Santos Pombo
+
 
 📜 License
 
