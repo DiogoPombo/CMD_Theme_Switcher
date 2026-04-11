@@ -1,7 +1,7 @@
 # 🎨 CMD Theme Switcher
 
 
-A simple yet stylish utility to **switch Command Prompt (CMD) themes** on Windows, powered by PowerShell with a graphical interface launched via `.CMD`.
+A simple yet stylish utility to **switch Command Prompt (CMD) themes** on Windows, powered by PowerShell with a graphical interface.
 
 
 ---
