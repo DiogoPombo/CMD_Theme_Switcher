@@ -12,7 +12,7 @@ A simple yet stylish utility to **switch Command Prompt (CMD) themes** on Window
 
 - Quickly toggle between CMD themes:
   - **STANDARD** → Restores the default CMD theme.
-  - **BLACK** → Black background with white text (`color 07`).
+  - **DARK** → Black background with white text (`color 07`).
   - **LIGHT** → White background with black text (`color f0`).
   - **CANCEL** → Closes without making changes.
 - User-friendly graphical interface with buttons.
@@ -55,7 +55,7 @@ The .CMD script calls PowerShell to:
 Why was it created? Why would I want to change my CMD theme? Why would I use this instead of changing the color manually?
 - I work in a well-lit and bright environment, and among my tasks I need to use the CMD. The default dark theme in CMD strains my eyes in bright environments, so I choose to use CMD with a light theme but since I constantly need to open and close the CMD, it's impractical for me to change the console color every time I open it. Therefore, I thought of an automatic solution.
 
-- If in the future CMD adapts to the Windows theme, switching between light and black depending on the OS theme, you might not want to use the auto theme; in this case, this theme switcher would be useful.
+- If in the future CMD adapts to the Windows theme, switching between light and dark depending on the OS theme, you might not want to use the auto theme; in this case, this theme switcher would be useful.
 
 - You can change your CMD color manually instead of using this, yes, but if you work with CMD by constantly opening and closing it, this creates a registry key that automatically selects the theme, avoiding unnecessary repetitive action, and you can undo the changes at any time.
 
