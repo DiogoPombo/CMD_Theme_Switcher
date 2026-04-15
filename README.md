@@ -1,81 +1,129 @@
 # 🎨 CMD Theme Switcher
 
-
-A simple yet stylish utility to **switch Command Prompt (CMD) themes** on Windows, powered by PowerShell with a graphical interface.
-
+A simple yet powerful utility to **switch Command Prompt (CMD) themes** on Windows, powered by PowerShell with a graphical interface.
 
 ---
-
 
 ## 🚀 Features
 
+* Quickly switch between multiple CMD themes:
 
-- Quickly toggle between CMD themes:
-  - **STANDARD** → Restores the default CMD theme.
-  - **DARK** → Black background with white text (`color 07`).
-  - **LIGHT** → White background with black text (`color f0`).
-  - **CANCEL** → Closes without making changes.
-- User-friendly graphical interface with buttons.
-- Automatically creates the required registry key (`HKCU:\Software\Microsoft\Command Processor`).
-- Single `.CMD` script — no extra files needed.
+  * **STANDARD** → Restores the default CMD behavior (removes only color customization, preserves existing AutoRun).
+  * **SYSTEM** → Matches the Windows theme:
 
+    * Light Windows theme → LIGHT
+    * Dark Windows theme → DARK
+  * **AUTO** → Automatically selects theme based on time:
+
+    * 07:00–17:00 → LIGHT
+    * 17:01–06:59 → DARK
+  * **DARK** → Black background with white text (`color 07`)
+  * **LIGHT** → White background with black text (`color f0`)
+  * **MATRIX** → Black background with green text (`color 0A`)
+  * **COLD** → Black background with cyan text (`color 0B`)
+  * **GOLD** → Black background with yellow text (`color 0E`)
+  * **THREAT** → Black background with red text (`color 0C`)
+  * **CANCEL** → Closes without making changes
 
 ---
 
+## 🧠 Smart AutoRun Handling
+
+* Preserves any existing `AutoRun` configuration
+* Removes only previous `color XX` commands
+* Prevents duplication or conflicts
+* Fully reversible at any time
+
+---
 
 ## 📦 Installation
 
-
 1. Download or clone this repository:
+
    ```bash
    git clone https://github.com/DiogoPombo/CMD_Theme_Switcher
-- Place the CMD Theme Switcher.CMD file in a convenient folder.
-- Run it by double-clicking
+   ```
 
+2. Place the `CMD Theme Switcher.CMD` file in a convenient folder
 
+3. Run it by double-clicking
 
-🖥️ Requirements
-- Windows 10 or later
-- PowerShell (pre-installed on Windows)
-- Script execution allowed (already handled with ExecutionPolicy Bypass)
+---
 
+## 🖥️ Requirements
 
-  
-⚙️ How It Works
+* Windows 10 or later
+* PowerShell available in system PATH
 
-The .CMD script calls PowerShell to:
-- Create a graphical window (System.Windows.Forms)
-- Display buttons for theme selection
-- Modify the registry key responsible for CMD AutoRun
-- Apply the chosen color command automatically to new CMD sessions
+> ⚠️ If PowerShell is not available, the application will display an error and exit.
 
+---
 
-❓Frequently Asked Questions
+## ⚙️ How It Works
 
-Why was it created? Why would I want to change my CMD theme? Why would I use this instead of changing the color manually?
-- I work in a well-lit and bright environment, and among my tasks I need to use the CMD. The default dark theme in CMD strains my eyes in bright environments, so I choose to use CMD with a light theme but since I constantly need to open and close the CMD, it's impractical for me to change the console color every time I open it. Therefore, I thought of an automatic solution.
+The `.CMD` script launches PowerShell to:
 
-- If in the future CMD adapts to the Windows theme, switching between light and dark depending on the OS theme, you might not want to use the auto theme; in this case, this theme switcher would be useful.
+* Create a graphical interface using `System.Windows.Forms`
+* Display theme selection buttons
+* Read and modify the Windows registry:
 
-- You can change your CMD color manually instead of using this, yes, but if you work with CMD by constantly opening and closing it, this creates a registry key that automatically selects the theme, avoiding unnecessary repetitive action, and you can undo the changes at any time.
+  * `HKCU:\Software\Microsoft\Command Processor`
+* Update the `AutoRun` key to automatically apply the selected theme on new CMD sessions
 
+---
 
-⚠️ Disclaimer
+## 💡 Use Cases
 
-This script modifies the Windows registry to configure CMD.
+* Quickly switch themes depending on environment lighting
+* Avoid repetitive manual configuration
+* Automatically adapt CMD appearance:
 
-Be aware that:
-- The theme applies to all new CMD windows.
-- You can revert to default by selecting STANDARD.
+  * Based on time of day (AUTO)
+  * Based on Windows theme (SYSTEM)
 
-  
-👨‍💻 Author
+---
 
-Created by Diogo Santos Pombo
+## ❓ Frequently Asked Questions
 
+### Why use this instead of changing CMD manually?
 
-📜 License
+If you frequently open and close CMD, manually changing the theme becomes repetitive and inefficient. This tool automates that process.
 
+---
+
+### Does it overwrite my existing configuration?
+
+No.
+
+It preserves your existing `AutoRun` settings and only modifies color-related commands.
+
+---
+
+### Can I revert the changes?
+
+Yes.
+
+Just click **STANDARD** to remove color customization and restore default behavior.
+
+---
+
+## ⚠️ Disclaimer
+
+This script modifies the Windows registry to configure CMD behavior.
+
+* Changes apply to all new CMD sessions
+* No system-wide or administrative changes are made
+* All changes are reversible
+
+---
+
+## 👨‍💻 Author
+
+Created by **Diogo Santos Pombo**
+
+---
+
+## 📜 License
 
 Distributed under the MIT License.
 Feel free to use, modify, and share.
