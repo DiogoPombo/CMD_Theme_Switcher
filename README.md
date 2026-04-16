@@ -9,14 +9,6 @@ A simple yet powerful utility to **switch Command Prompt (CMD) themes** on Windo
 * Quickly switch between multiple CMD themes:
 
   * **STANDARD** → Restores the default CMD behavior (removes only color customization, preserves existing AutoRun).
-  * **SYSTEM** → Matches the Windows theme:
-
-    * Light Windows theme → LIGHT
-    * Dark Windows theme → DARK
-  * **AUTO** → Automatically selects theme based on time:
-
-    * 07:00–17:00 → LIGHT
-    * 17:01–06:59 → DARK
   * **DARK** → Black background with white text (`color 07`)
   * **LIGHT** → White background with black text (`color f0`)
   * **MATRIX** → Black background with green text (`color 0A`)
@@ -73,10 +65,6 @@ The `.CMD` script launches PowerShell to:
 
 * Quickly switch themes depending on environment lighting
 * Avoid repetitive manual configuration
-* Automatically adapt CMD appearance:
-
-  * Based on time of day (AUTO)
-  * Based on Windows theme (SYSTEM)
 
 ---
 
@@ -108,7 +96,7 @@ Just click **STANDARD** to remove color customization and restore default behavi
 
 This script modifies the Windows registry to configure CMD behavior.
 
-* Changes apply to all new CMD sessions
+* Changes apply to all new CMD sessions ony for current user
 * No system-wide or administrative changes are made
 * All changes are reversible
 
