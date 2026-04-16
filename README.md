@@ -20,9 +20,6 @@ A simple yet powerful utility to **switch Command Prompt (CMD) themes** on Windo
   * **DARK** → Black background with white text (`color 07`)
   * **LIGHT** → White background with black text (`color f0`)
   * **MATRIX** → Black background with green text (`color 0A`)
-  * **COLD** → Black background with cyan text (`color 0B`)
-  * **GOLD** → Black background with yellow text (`color 0E`)
-  * **THREAT** → Black background with red text (`color 0C`)
   * **CANCEL** → Closes without making changes
 
 ---
