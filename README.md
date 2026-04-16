@@ -9,6 +9,14 @@ A simple yet powerful utility to **switch Command Prompt (CMD) themes** on Windo
 * Quickly switch between multiple CMD themes:
 
   * **STANDARD** → Restores the default CMD behavior (removes only color customization, preserves existing AutoRun).
+  * **SYSTEM** → Matches the Windows theme:
+
+    * Light Windows theme → LIGHT
+    * Dark Windows theme → DARK
+  * **AUTO** → Automatically selects theme based on time:
+
+    * 07:00–17:00 → LIGHT
+    * 17:01–06:59 → DARK
   * **DARK** → Black background with white text (`color 07`)
   * **LIGHT** → White background with black text (`color f0`)
   * **MATRIX** → Black background with green text (`color 0A`)
@@ -57,7 +65,8 @@ The `.CMD` script launches PowerShell to:
 * Read and modify the Windows registry:
 
   * `HKCU:\Software\Microsoft\Command Processor`
-* Update the `AutoRun` key to automatically apply the selected theme on new CMD sessions
+* Create a theme script in `userprofile` folder
+* Update the `AutoRun` key to automatically load the theme script on new CMD sessions
 
 ---
 
@@ -65,6 +74,10 @@ The `.CMD` script launches PowerShell to:
 
 * Quickly switch themes depending on environment lighting
 * Avoid repetitive manual configuration
+* Automatically adapt CMD appearance:
+
+  * Based on time of day (AUTO)
+  * Based on Windows theme (SYSTEM)
 
 ---
 
@@ -72,7 +85,7 @@ The `.CMD` script launches PowerShell to:
 
 ### Why use this instead of changing CMD manually?
 
-If you frequently open and close CMD, manually changing the colors becomes repetitive and inefficient. This tool automates that process.
+If you frequently open and close CMD, manually changing the theme becomes repetitive and inefficient. This tool automates that process.
 
 ---
 
@@ -96,9 +109,9 @@ Just click **STANDARD** to remove color customization and restore default behavi
 
 This script modifies the Windows registry to configure CMD behavior.
 
-* Changes apply to all new CMD sessions ony for current user
-* No system-wide or administrative changes are made
-* All changes are reversible
+* Changes apply to all new CMD sessions for current user only.
+* No system-wide or administrative changes are made.
+* All changes are reversible.
 
 ---
 
