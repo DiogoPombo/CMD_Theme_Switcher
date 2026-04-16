@@ -72,7 +72,7 @@ The `.CMD` script launches PowerShell to:
 
 ### Why use this instead of changing CMD manually?
 
-If you frequently open and close CMD, manually changing the theme becomes repetitive and inefficient. This tool automates that process.
+If you frequently open and close CMD, manually changing the colors becomes repetitive and inefficient. This tool automates that process.
 
 ---
 
